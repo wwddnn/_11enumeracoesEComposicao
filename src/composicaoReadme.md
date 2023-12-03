@@ -4,8 +4,8 @@ composicao:
 é uma relacao 'tem-um' ou 'tem-varios'.
 vantagens:
 DIVISAO DE RESPONSABILIDADES-ORGANIZACAO (divide o seu sistema em responsabilidades, cada classe tem sua responsabilidade)
-COESAO (cada classe tem sua responsabilidade simples e bem definida)
-FLEXIBILIDADE 
+COESAO (cada classe tem sua responsabilidade simples e bem definida. cada objeto tem sua responsabilidade específica)
+FLEXIBILIDADE (uma coisa dividida em partes é mais facil de trabalhar )
 REUSO (mesmo objeto pode ser reaproveitado em mais de um lugar)
 
 obs na uml o simbolo da composicao é o diamante preto. onde a classe que tiver do lado do diamante é o lado do todo, e o lado
@@ -13,11 +13,11 @@ que tiver a seta é o lado das partes. ela representa uma relacao todo-parte ent
 preto esta no lado do Order, e a seta esta no lado do OrderItem e aqui tem o asterisco que representa muitos. ou seja uma Order
 tem 1 ou mais OrderItem. ou seja 1 pedido contem 1 ou varios itens de pedido.
 
-obs temos outro exemplo mas aqui sem diamante. ja que é Order -> Cliente. ou seja é uma relacao de associacao mas 
+obs temos outro exemplo mas aqui sem diamante. ja que é Order -> Client. ou seja é uma relacao de associacao mas 
 nao é uma relacao todo-parte. mas mesmo assim chamamos de uma 'composicao de objetos' na hora que vamos implementar, 
-dentro do objeto Order vai ter um atributo que é do tipo Cliente. entao falamos que isso é uma composicao de objetos.
+dentro do objeto Order vai ter um atributo que é do tipo Client. entao falamos que isso é uma ''composicao de objetos''.
 
-obs temos ainda mais um caso, que é o OrderItem -> Product. ou seja um item de pedido tem um produto. ou seja o item de pedido
+obs temos ainda mais um caso, que é o OrderItem -> Product, ou seja um item de pedido tem um produto. ou seja o item de pedido
 esta associado com o produto. 
 
 OBS A COMPOSICAO DE OBJETOS PODE OCORRER TAMBEM COM SERVICES, E NAO SOMENTE COM ENTITIES.
