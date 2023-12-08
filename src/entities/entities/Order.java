@@ -8,10 +8,9 @@ public class Order {
 
     private Integer id;
     private Date moment;
-    private OrderStatus status;
+    private OrderStatus status; //esse é um atributo do status do pedido, que vem da classe enum.
 
     public Order() {
-
     }
 
     public Order(Integer id, Date moment, OrderStatus status) {
@@ -46,10 +45,10 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "Order [" +
                 "id=" + id +
                 ", moment=" + moment +
                 ", status=" + status +
-                '}';
+                ']';
     }
 }
